@@ -5,12 +5,12 @@
     - name: creating ec2 instance 
       ec2:
         key_name: universal
-        group_id: sg-02703b50
+        group_id: sg-063bb339b0d487132
         region: us-east-1
         instance_type: t2.micro
         image: ami-07ebfd5b3428b6f4d
         wait: yes
-        vpc_subnet_id: subnet-1ca4a17b
+        vpc_subnet_id: subnet-02460d9874cc97281
     - name: fetching instance information
       ec2_instance_info:
         region: us-east-1
